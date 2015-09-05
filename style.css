@@ -1,5 +1,14 @@
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+
 body {
     background-color: LightGray;
+    font-family: inherit;
 }
 div {
     border: 1px solid Chocolate;
@@ -7,19 +16,44 @@ div {
 
 .masthead-nav {
   background-color: #fff;
+  height: 4.375rem;
   position: fixed;
   width: 100%;
   border-bottom: 1px solid #DDD;
   z-index: 9999;
+  box-sizing: border-box;
 }
 
 .masthead-nav > .nav-content { /* ask mentor how come the site did have these only had the height but not the width or margin  refer to: http://thinkful-ed.github.io/karma-clone/css/style.css;*/
 	height: 4.375rem;
-	width: 1150px;
+	width: 1175px;
 	margin: 0 auto; /* centers .navcontent inside .masthead-nav */
 }
 
-img {
+.nav-content .logo {
 	border: 0;
-	margin: 1rem 1rem;
+	padding: 10px 10px;
+}
+
+.links {
+	float: right;
+	margin: -2.75rem 24.5rem;	
+	color: #838994;
+
+}
+
+.links li {
+	display: inline;
+	list-style-type: none;
+	margin-left: 1.5rem;
+}
+
+.masthead-nav .links li.active {
+	color: #4c5058;
+	font-weight: 500;
+}
+
+.masthead-nav .links li:hover {
+    cursor: pointer;
+    color: #333333;
 }
