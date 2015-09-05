@@ -11,7 +11,7 @@ body {
     font-family: inherit;
 }
 div {
-    border: 1px solid Chocolate;
+  /*  border: 1px solid Chocolate;*/
 }
 
 .masthead-nav {
@@ -24,9 +24,15 @@ div {
 }
 
 .masthead-nav > .nav-content { /* ask mentor how come the site did have these only had the height but not the width or margin  refer to: http://thinkful-ed.github.io/karma-clone/css/style.css;*/
-	height: 4.375rem;
-	width: 1175px;
+	height: 70px;
+	width: 970px;
 	margin: 0 auto; /* centers .navcontent inside .masthead-nav */
+}
+
+.nav-content {
+    padding: 0 0.938rem;
+    margin: 0 auto;
+    min-width: 37.5rem;
 }
 
 .nav-content .logo {
@@ -57,4 +63,73 @@ div {
 .masthead-nav .links li:hover {
     cursor: pointer;
     color: #333333;
+}
+
+.intro {
+	background-image: url("images/first-background.jpeg");
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 45.938rem;
+	overflow: auto; /*to keep margin-top from pushing the parent element down*/
+}
+
+.intro h1 {
+	margin-top: 17.5rem;
+    font-size: 3.125rem;
+}
+
+.intro h1, .intro h3{
+	color: white;
+	text-align: center;
+	font-weight: 300;
+}
+
+.intro h3 {
+	margin-top: 1.25rem;
+	font-size: 1.563rem;
+	color: white;
+}
+
+.intro .buttons {
+    color: white;
+    text-align: center;
+    margin-top: 1.563rem;
+}
+
+:-webkit-any(article,aside,nav,section) h1 {
+    font-size: 1.5em;
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    -webkit-margin-before: 0.67em;
+    -webkit-margin-after: 0.67em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+
+button {
+	width: 9.688rem;
+	background-color: #f15a29;
+	text-shadow: none;
+	border-style: none;
+	border-radius: 4px;
+	padding: 1rem 1.5rem;
+	color: white;
+	font-size: 1.125rem;
 }
