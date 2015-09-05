@@ -15,33 +15,11 @@ div {
 
 .masthead-nav > .nav-content { /* ask mentor how come the site did have these only had the height but not the width or margin  refer to: http://thinkful-ed.github.io/karma-clone/css/style.css;*/
 	height: 4.375rem;
-	width: 970px;
+	width: 1150px;
 	margin: 0 auto; /* centers .navcontent inside .masthead-nav */
 }
 
-.masthead-nav > .logo {
-	height: 4.375rem;
-}
-
-.masthead-nav .links {
-	float: right;
-	color: #838994;
-	font-size: 1.04rem;
-	margin-top: 1.7rem;
-}
-
-.masthead-nav .links li {
-	display: inline-block;
-	margin-left: 1.563rem;
-}
-
-.masthead-nav .links li.active {
-	color: #4c5058;
-	font-weight: 500;
-}
-
-
-ul {
-	list-style: none;
-	display: block;
+img {
+	border: 0;
+	margin: 1rem 1rem;
 }
