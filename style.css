@@ -21,7 +21,6 @@ div {
   width: 100%;
   border-bottom: 1px solid #DDD;
   z-index: 9999;
-  box-sizing: border-box;
 }
 
 .masthead-nav > .nav-content { /* ask mentor how come the site did have these only had the height but not the width or margin  refer to: http://thinkful-ed.github.io/karma-clone/css/style.css;*/
@@ -35,17 +34,19 @@ div {
 	padding: 10px 10px;
 }
 
-.links {
+.masthead-nav .links {
 	float: right;
-	margin: -2.75rem 24.5rem;	
+	font-family: 'Roboto', sans-serif;
 	color: #838994;
-
+	font-size: 16px;
+	margin-top: 25px;
+	-webkit-font-smoothing: antialiased;
 }
 
 .links li {
 	display: inline;
-	list-style-type: none;
-	margin-left: 1.5rem;
+	margin-left: 1rem;
+
 }
 
 .masthead-nav .links li.active {
