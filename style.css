@@ -26,7 +26,7 @@ ul, ol {
   position: fixed;
   width: 100%;
   border-bottom: 1px solid #DDD;
-  z-index: 9999;
+  z-index: 9999;/*large zindex to insure the nav stays on top of all elements*/
 }
 
 .masthead-nav > .nav-content { /* ask mentor how come the site did have these only had the height but not the width or margin  refer to: http://thinkful-ed.github.io/karma-clone/css/style.css;*/
@@ -166,7 +166,7 @@ button {
 }
 
 .cases .devices > h3 {
-	font-weight: 400;
+	font-weight: 00;
 	font-size: 1.563rem;
 	margin: 2.5rem 0px 1.875rem;
 
@@ -175,4 +175,68 @@ button {
 .cases .devices > li {
 	width: 33.3333333%;
     float: left;
+}
+
+.social {
+	background-color: white;
+	overflow: auto;
+	padding-bottom: 9.375rem;
+	text-align: center;
+}
+
+.social h5 {
+	margin-left: 35px;
+}
+
+.social span {
+	margin-left: 40px;
+}
+
+.social hr {
+	border: 0;
+    border-top: 1px solid #eaebec;
+	width: 50%;
+}
+
+.social .icons > li {
+    border-radius: 1.25rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: inline-block;
+    margin: 0rem 5px;
+    border: 1px solid #eaebec;
+    padding: 0.625rem 0;
+    text-align: center;
+}
+
+.social .twitter {
+    color: #55acee;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0px 0px;
+}
+
+.fa-twitter:before {
+    content: "\f099";
+}
+
+.fa-facebook:before {
+    content: "\f09a";
+}
+
+.fa-instagram:before {
+    content: "\f16d";
+}
+
+.social .copy {
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #838994;
 }
